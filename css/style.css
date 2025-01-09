@@ -1,0 +1,663 @@
+body {
+    padding-top: 70px; /* Убедитесь, что значение соответствует высоте вашей навигационной панели */
+}
+
+/** Top Menu **/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Убедитесь, что панель отображается поверх другого контента */
+    background-color: #ffffff; /* Цвет фона, чтобы панель была видимой */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для визуального отделения от контента */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #161c29;
+}
+.navbar-nav {
+    flex-direction: row;
+}
+.nav-link {
+    padding: 8px 12px;
+}
+.navbar-brand img {
+    height: 40px; /* Задайте высоту логотипа */
+}
+.nav-item a.menu-item {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 34px;
+  font-style: normal;
+  color: #161c29;
+}
+.btn-custom {
+    margin-left: 10px;
+}
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+.login-btn {
+  width: 137px;
+  height: 46px;
+  border-color: #efa65c;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 29px;
+}
+.registr-btn {
+  width: 158px;
+  height: 46px;
+  border-radius: 29px;
+  background: #efa65c
+}
+.language-btn {
+  width: 50px;
+  height: 50px;
+  background: #f0f4f3
+  border-radius:50%;
+}
+
+/** Banner block **/
+
+.banner {
+    background-color: #F0F4F3; /* Цвет фона */
+    padding: 40px 0;
+}
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-text {
+    font-family: "BioRhyme", serif;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 34px;
+    font-style: normal;
+    text-align: left;
+    color: #657b5f;
+}
+.banner-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.banner-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.play-button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid #333;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+.lines-top {
+  position: absolute;
+  top: -300px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/lines-top.svg') no-repeat center center;
+  background-size: cover; /* Настройте по своему усмотрению */
+}
+.start-trening {
+  text-align: center;
+  width: 100%;
+}
+.start-trening .registr-btn {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 34px;
+  font-style: normal;
+  color: #161c29;
+  display: inline-block;
+  letter-spacing: -1px;
+}
+.show-on-mobile {
+  display: none !important;
+}
+
+/** Improves Block **/
+.improves {
+     background-color: #F0F4F3; /* Цвет фона */
+     padding: 150px 0 40px 0;
+ }
+ .improves-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .improves-title {
+   font-family: "BioRhyme", serif;
+   font-size: 34px;
+   font-weight: bold;
+   line-height: 56px;
+   font-style: normal;
+   text-align: left;
+   color: #13577a;
+ }
+ .improves-list {
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     padding: 20px 0 0 0;
+     gap: 10px; /* Зазор между элементами */
+ }
+ .improves-list li {
+    display: flex;
+     align-items: center;
+     width: 48%; /* Ширина каждого элемента списка */
+     margin-bottom: 10px;
+     font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+      font-weight: normal;
+      line-height: 36px;
+      font-style: normal;
+      text-align: left;
+      color: #13577a;
+ }
+ .improves-icon {
+    width: 50px;
+     height: 50px;
+     background-color: #1c6b91; /* Основной цвет для иконок */
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     font-size: 14px;
+     margin-right: 10px;
+ }
+ .improves-image {
+     position: relative;
+     width: 100%;
+     max-width: 350px;
+     height: auto;
+ }
+
+ /** Methods **/
+ .methods {
+     background-color: #ECF0D8; /* Цвет фона */
+     padding: 50px 0;
+ }
+ .methods-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .methods-text {
+   font-family: "BioRhyme", serif;
+   font-size: 34px;
+   font-weight: normal;
+   line-height: 46px;
+   font-style: normal;
+   text-align: left;
+   color: #657b5f;
+     max-width: 500px;
+ }
+ .methods-image-container {
+     position: relative;
+     width: 100%;
+     max-width: 400px;
+ }
+ .methods-image {
+     width: 100%;
+     height: auto;
+     border-radius: 20px;
+     overflow: hidden;
+ }
+/** exercises **/
+.exercises {
+    background-color: #F0F4F3; /* Цвет фона */
+    padding: 50px 0;
+}
+.exercises-header {
+    text-align: center;
+    margin: 20px auto 40px auto;
+    width: 500px;
+}
+.exercises-header h2 {
+  font-family: "BioRhyme", serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 36px;
+    font-style: normal;
+    text-align: center;
+    color: #af621e;
+}
+.exercises-header img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.exercises-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.exercises-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.exercises-item {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.exercises-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.exercises-caption {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+  font-style: normal;
+  text-align: center;
+  color: #af621e;
+  margin-top: 10px;
+  letter-spacing: -1px;
+}
+/** Photo/Video block **/
+.info {
+  background-color: #ECF0D8; /* Цвет фона */
+  padding: 50px 0;
+}
+.info-block {
+     position: relative;
+ }
+ .info-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .info-text {
+     font-family: "BioRhyme", serif;
+     font-size: 34px;
+     font-weight: normal;
+     line-height: 46px;
+     font-style: normal;
+     text-align: left;
+     color: #657b5f;
+     max-width: 400px;
+
+ }
+ .info-placeholder {
+     width: 400px;
+     height: 300px;
+     background-color: white;
+     border: 1px solid #ccc;
+ }
+ .info-line {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background: url('../images/lines-price.svg') no-repeat center center;
+
+ }
+ /** Methodology **/
+ .methodology {
+   background-color: #F0F4F3;
+     padding: 50px 0;
+ }
+ .methodology-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ .methodology-image-container {
+     position: relative;
+     width: 100%;
+     max-width: 400px;
+ }
+ .methodology-image {
+     width: 100%;
+     height: auto;
+     border-radius: 20px;
+     overflow: hidden;
+ }
+ .methodology-text {
+    max-width: 500px;
+}
+.methodology-text h2 {
+  font-family: "BioRhyme", serif;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 42px;
+  font-style: normal;
+  text-align: left;
+  color: #657b5f;
+    margin-bottom: 20px;
+}
+.methodology-text p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: -1px;
+  color: #af621e;
+}
+/** Feedback - Testimonial **/
+.testimonial {
+    background-color: #FFFFFF;
+    padding: 50px 0;
+}
+.custom-carousel {
+        background-color: #fff; /* Цвет фона */
+        padding: 40px 0;
+        position: relative;
+    }
+    .custom-carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .carousel-text {
+        max-width: 500px;
+        font-size: 1rem;
+        color: #6c757d; /* Цвет текста */
+    }
+    .image-container {
+        position: relative;
+    }
+    .image-wrapper {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .image-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #f39c12;
+        background-color: #fff;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        outline: none;
+    }
+    .carousel-control-prev {
+      margin-left: 5px;
+    }
+    .carousel-control-next {
+      margin-right: 5px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .carousel-control-prev-icon {
+      background-image: url("../images/arrow-right.svg");
+    }
+    .carousel-control-next-icon {
+      background-image: url("../images/arrow-left.svg");
+    }
+    .carousel-indicators {
+        bottom: -30px;
+    }
+    .carousel-indicators li {
+        background-color: #f39c12;
+    }
+    /* Отключение анимации */
+    .carousel .carousel-item {
+        transition: none;
+    }
+/* Helps  */
+.helps-block {
+     background-color: #eef1ed; /* Цвет фона */
+     padding: 40px 0;
+ }
+ .helps-header {
+     font-family: "BioRhyme", serif;
+     font-size: 44px;
+     font-weight: bold;
+     line-height: 56px;
+     font-style: normal;
+     text-align: left;
+     color: #13577a;
+     margin-bottom: 20px;
+ }
+ .list-container {
+     display: flex;
+     justify-content: space-between;
+ }
+ .helps-list {
+     list-style: none;
+     padding: 0;
+ }
+ .helps-list li {
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+     font-family: "Work Sans", sans-serif;
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 36px;
+      font-style: normal;
+      text-align: left;
+      letter-spacing: -1px;
+      color: #13577a;
+ }
+ .helps-icon {
+     width: 50px;
+     height: 50px;
+     background-color: #1c6b91; /* Основной цвет для иконок */
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     font-size: 14px;
+     margin-right: 10px;
+ }
+ .helps-icon.orange {
+     background-color: #EFA65C;
+ }
+ .helps-icon.green {
+     background-color: #657B5F;
+ }
+ .helps-icon.blue {
+     background-color: #13577A;
+ }
+ .helps-icon.teal {
+     background-color: #95C3CC;
+ }
+ .helps-icon.brown {
+     background-color: #AF621E;
+ }
+/* Footer */
+.footer {
+   background-color: #1c1c24; /* Темный цвет фона */
+   color: #F0F4F3; /* Цвет текста */
+   padding: 40px 0 0 0;
+}
+.footer a {
+   color: #F0F4F3; /* Цвет ссылок */
+   text-decoration: none;
+}
+.footer a:hover {
+   color: #e67e22; /* Цвет ссылок при наведении */
+}
+.footer h5 {
+   color: #EFA65C; /* Цвет заголовков */
+   margin-bottom: 20px;
+}
+.footer p {
+   margin: 0;
+}
+.footer-bottom {
+   background-color: #101016; /* Темнее основной фона */
+   padding: 10px 0;
+   text-align: left;
+   font-size: 0.9rem;
+   margin-top: 20px;
+}
+.footer-bottom a {
+   color: #d1d1d1;
+   margin: 0 10px;
+}
+.privaty a {
+
+}
+.copy-right {
+
+}
+@media (max-width: 767.98px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+    .show-on-mobile {
+      display: block !important;
+    }
+    .banner-image {
+      margin: 0 auto;
+    }
+    .banner-text {
+      margin: 100px 0 60px 0;
+      text-align: center;
+      font-size: 20px;
+      line-height: 28px;
+      width: 100%;
+
+    }
+    .lines-top {
+      top: -280px;
+    }
+    .improves {
+      padding: 50px 0 40px 0;
+    }
+    .improves-image {
+      max-width: 100%;
+    }
+    .improves-title {
+      font-size: 28px;
+      text-align: center;
+    }
+    .improves-icon {
+      width: 36px;
+      height: 36px;
+    }
+    .improves-list li {
+      width: 100%;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: -1px;
+      margin-bottom: 5px;
+    }
+    .improves-list li .improves-icon img {
+      width: 18px;
+      height: 21px;
+    }
+    .methods-text {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .methods-image-container {
+      max-width: 100%
+    }
+    .exercises-header {
+      max-width: 100%;
+    }
+    .exercises-header h2 {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 26px;
+      font-style: normal;
+    }
+    .exercises-caption {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+    .exercises-item {
+      width: 100%;
+      height: 100%;
+    }
+    .info-text {
+      font-family: "BioRhyme", serif;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 26px;
+      font-style: normal;
+      text-align: center;
+      color: #657b5f;
+      padding-bottom: 50px;
+    }
+    .methodology-image-container {
+      max-width: 100%;
+      padding-bottom: 20px;
+    }
+    .methodology-text h2 {
+      font-size: 20px;
+      line-height: 28px;
+      font-style: normal;
+      text-align: left;
+      color: #13577a;
+      margin-bottom: 20px;
+    }
+    .methodology-text p {
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 26px;
+      font-style: normal;
+      text-align: left;
+      letter-spacing: -1px;
+      color: #af621e;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      display: none;
+    }
+.image-container {
+  padding-bottom: 30px;
+}
+     .helps-header {
+       font-size: 24px;
+      font-weight: bold;
+      line-height: 28px;
+      padding-bottom: 20px;
+     }
+      .helps-list li {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 26px;
+      }
+}

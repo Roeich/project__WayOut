@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Menu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Work+Sans:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo/logo-with-icon.png" alt="Logo">
+            </a>
+            <!-- Кнопка для мобильного меню -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Меню и кнопки -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link menu-item" href="#">Par mums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu-item" href="#">Raksti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn login-btn btn-custom" href="#">Ienākt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn registr-btn btn-custom" href="#">Registreties</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle language-btn" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            LV
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#">Русский</a>
+                            <a class="dropdown-item" href="#">Английский</a>
+                            <a class="dropdown-item" href="#">Латышский</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 d-flex justify-content-center show-on-mobile">
+            <div class="banner-image">
+              <img src="images/header-banner.png" alt="Video Thumbnail">
+              <div class="play-button"></div>
+            </div>
+          </div>
+          <div class="lines-top show-on-mobile"></div>
+          <div class="col-lg-6 col-sm-12 d-flex align-items-center">
+            <div class="banner-text">
+              Wayout.is ir web aplikācija,<br>
+              kas ar video un spēļu palīdzību<br>
+              tev palīdzēs uzlabot smadzeņu<br>
+              darbību un paaugstināt dzīves<br>
+              kvalitāti ikdienā.
+            </div>
+          </div>
+          <div class="show-on-mobile start-trening">
+            <a class="btn registr-btn btn-custom" href="#">Sākt treneties</a>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center hide-on-mobile">
+            <div class="banner-image">
+              <img src="images/header-banner.png" alt="Video Thumbnail">
+              <div class="play-button"></div>
+            </div>
+          </div>
+        </div>
+        <div class="lines-top hide-on-mobile"></div>
+      </div>
+    </section>
+    <section class="improves">
+      <div class="container improves-content">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 d-flex hide-on-mobile">
+            <div class="improves-title">Wayout palīdz uzlabot:</div>
+          </div>
+          <div class="col-lg-12 col-sm-12 show-on-mobile">
+            <div class="improves-image">
+                <div class="background-shapes"></div>
+                <img src="images/improves-image.png" alt="Light Bulb" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-12 col-sm-12 d-flex show-on-mobile">
+            <div class="improves-title">Wayout palīdz uzlabot:</div>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12">
+            <div class="improves-text">
+              <ul class="improves-list">
+                <li>
+                  <div class="improves-icon" style="background-color: #AF621E;">
+                    <img src="images/logo-icon-grey.png" alt="Mācīšanās prasmes">
+                  </div>
+                  Mācīšanās prasmes
+                </li>
+                <li>
+                  <div class="improves-icon" style="background-color: #EFA65C;">
+                    <img src="images/logo-icon-brown.png" alt="Komunikāciju">
+                  </div>
+                  Komunikāciju
+                </li>
+                <li>
+                  <div class="improves-icon" style="background-color: #657B5F;">
+                    <img src="images/logo-icon-grey.png" alt="Atmiņu">
+                  </div>
+                  Atmiņu
+                </li>
+                <li>
+                  <div class="improves-icon" style="background-color: #13577A;">
+                    <img src="images/logo-icon-grey.png" alt="Smadzeņu darbības ātrumu">
+                  </div>
+                  Smadzeņu darbības ātrumu
+                </li>
+                <li>
+                  <div class="improves-icon" style="background-color: #CFCFC7;">
+                    <img src="images/logo-icon-grey.png" alt="Loģiku">
+                  </div>
+                  Loģiku
+                </li>
+                <li>
+                  <div class="improves-icon" style="background-color: #ECF0D8;">
+                    <img src="images/logo-icon-blue.png" alt="">
+                  </div>
+                  Pašsajūtu
+                </li>
+                <li>
+                  <div class="improves-icon" style="background-color: #95C3CC;">
+                    <img src="images/logo-icon-blue.png" alt="">
+                  </div>
+                  Spēju noturēt uzmanību
+                </li>
+                <li>
+                  <div class="improves-icon" style="background-color: #FFFFFF;">
+                    <img src="images/logo-icon-orange.png" alt="">
+                  </div>
+                  Reakcijas ātrumu
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 hide-on-mobile">
+            <div class="improves-image ">
+                <div class="background-shapes"></div>
+                <img src="images/improves-image.png" alt="Light Bulb" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="methods">
+        <div class="container methods-content">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="methods-image-container">
+                      <img src="images/method-image.png" alt="Group Image" class="methods-image">
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="methods-text">
+                      Ar Wayout metodiku tiek strādāts jau vairāk nekā 45 gadus, un tā ir palīdzējusi vairāk nekā 30 000 klientu.
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="exercises">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-12">
+              <div class="exercises-header">
+                  <img src="images/exercises.png" alt="Logo">
+                  <h2>Ar pavisam vienkāršiem, bet pārdomātiem vingrinājumiem un to kombinācijām mēs varam attīstīt savas smadzenes.</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+          <div class="col-lg-3 col-md-6 exercises-container">
+            <div class="exercises-wrapper">
+              <div class="exercises-item">
+                <img src="images/exercises-finger.png" alt="Finger Exercises">
+              </div>
+            </div>
+            <div class="exercises-caption">Pirkstu vingrinājumi</div>
+          </div>
+          <div class="col-lg-3 col-md-6 exercises-container">
+            <div class="exercises-wrapper">
+              <div class="exercises-item">
+                <img src="images/exercises-blowing.png" alt="Blowing Exercises">
+              </div>
+            </div>
+            <div class="exercises-caption">Pūšanas vingrinājumi</div>
+          </div>
+          <div class="col-lg-3 col-md-6 exercises-container">
+            <div class="exercises-wrapper">
+              <div class="exercises-item">
+                <img src="images/exercises-speech-as-a-sense.png" alt="Speech Exercises">
+              </div>
+            </div>
+            <div class="exercises-caption">Runa kā maņa</div>
+          </div>
+          <div class="col-lg-3 col-md-6 exercises-container">
+            <div class="exercises-wrapper">
+              <div class="exercises-item">
+                  <img src="images/exercises-full-body-exercises.png" alt="Full Body Exercises">
+              </div>
+            </div>
+            <div class="exercises-caption">Pilna ķermeņa vingrinājumi</div>
+          </div>
+          <div class="show-on-mobile start-trening">
+            <a class="btn registr-btn btn-custom" href="#">Sākt treneties</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="info-block">
+        <div class="info-line"></div>
+          <div class="container info-content">
+            <div class="row ">
+              <div class="col-md-6">
+                <div class="info-text">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.
+                </div>
+              </div>
+              <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="info-placeholder"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="methodology">
+      <div class="methodology-block">
+        <div class="container">
+          <div class="row methodology-content">
+            <div class="col-md-6">
+              <div class="methodology-image-container">
+                <img src="images/methodology-image.png" alt="Group Image" class="methodology-image">
+              </div>
+            </div>
+            <div class="col-md-6 methodology-text">
+              <h2>Metodika ir balstīta uz paša cilvēkā esošiem dabas dotiem resursiem</h2>
+              <p>redzi, dzirdi, garšu, tausti, ožu, kuri darbojas uz cilvēka ķermeni un smadzenēm, kā arī ķermeņa kustībām – rotāciju, sīko muskulatūru – pirkstiem, locītavām, balsu, runas aparāta kustībām.</p>
+              <p>Tas rada pamatu domāšanai. Savukārt domāšana dod patstāvību katrā dzīves situācijā.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div id="testimonialCarousel" class="carousel slide custom-carousel" data-ride="false">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="container">
+                      <div class="row custom-carousel-item">
+                        <div class="col-md-6 text-center show-on-mobile">
+                            <div class="image-container">
+                                <div class="image-wrapper">
+                                    <img src="images/roberts.png" alt="Testimonial">
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col-md-6">
+                              <p class="carousel-text">“Gorenko, nelauz krēslu” — bija skolotāju biežākais aizrādījums man. Nezināju, daļēji tāpēc, ka man bija grūtības fokusēties, koncentrēt uzmanību. Bija problēmas izrunāt vienkāršus vārdus. Izlasot matemātikas teksta uzdevumus, neko nesapratu. Pie Irēnas ieraidījuma vienkāršus vingrinājumus, kurus var jebkurš izpildīt. Un pēc tam matemātikā es tik vienkārši visu atrisināju. Izmantojot viņas vingrinājumus, arī pieaugušais būdams, lai labāk strādātu, sportotu un apgūtu jaunu informāciju.</p>
+                              <p class="carousel-text">To, ka ir problēma, tu jūti tikai tad, kad veiktspēja pasliktinās. Tāpēc negaidi! Resursi ir. Smadzenes vienkārši vajag trenēt — vienmēr var būt labāk! <br>Roberts Gorenko</p>
+                          </div>
+                          <div class="col-md-6 text-center hide-on-mobile">
+                              <div class="image-container">
+                                  <div class="image-wrapper">
+                                      <img src="images/roberts.png" alt="Testimonial">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="container">
+                      <div class="row custom-carousel-item">
+                        <div class="col-md-6 text-center show-on-mobile">
+                            <div class="image-container">
+                                <div class="image-wrapper">
+                                    <img src="https://via.placeholder.com/200" alt="Testimonial">
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col-md-6">
+                              <p class="carousel-text">“Другая цитата для демонстрации работы слайдера. Содержание может быть любым и в любом количестве, главное, чтобы оно передавало нужную информацию и было эстетически приятным.”</p>
+                              <p class="carousel-text">“Актуальность тренировки мозга никогда не устареет, ведь каждый день мы сталкиваемся с новыми вызовами, которые требуют от нас новых решений.”</p>
+                          </div>
+                          <div class="col-md-6 text-center hide-on-mobile">
+                              <div class="image-container">
+                                  <div class="image-wrapper">
+                                      <img src="https://via.placeholder.com/200" alt="Testimonial">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+          <ol class="carousel-indicators">
+              <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+          </ol>
+      </div>
+    </section>
+    <section class="helps">
+      <div class="helps-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="helps-header">Wayout palīdz:</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="helps-list">
+                <li><div class="helps-icon brown"><img src="images/arrow-down.svg"></div>
+                  Grūtniecēm un bērniem līdz 1 gadam
+                </li>
+                <li><div class="helps-icon orange"><img src="images/arrow-down.svg"></div>
+                  Cilvēkiem ar īpašajām vajadzībām
+                </li>
+                <li><div class="helps-icon green"><img src="images/arrow-down.svg"></div>
+                  Cilvēkiem pēc traumām
+                </li>
+                <li><div class="helps-icon blue"><img src="images/arrow-down.svg"></div>
+                  Pirmskolas bērniem
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="helps-list">
+                    <li><div class="helps-icon teal"><img src="images/arrow-down.svg"></div>
+                        Skolniekiem, Jauniešiem
+                    </li>
+                    <li><div class="helps-icon brown"><img src="images/arrow-down.svg"></div>
+                        Studentiem
+                    </li>
+                    <li><div class="helps-icon orange"><img src="images/arrow-down.svg"></div>
+                        Pieaugušajiem
+                    </li>
+                    <li><div class="helps-icon green"><img src="images/arrow-down.svg"></div>
+                        Pensionāriem
+                    </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Wayout</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Par mums</a></li>
+              <li><a href="#">Raksti</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Kursi</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Reģistrēties</a></li>
+              <li><a href="#">Plāni</a></li>
+              <li><a href="#">Iepazīšanās kurss</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Kontakti</h5>
+            <ul class="list-unstyled">
+              <li><a href="mailto:info@wayout.is">info@wayout.is</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Rekvizīti</h5>
+            <p>Biedrība “Izausmege”<br>
+            Reģ. Nr. 40008150532<br>
+            Artilērijas iela 15-16, Rīga, LV-1001<br>
+            Banka: AS “Swedbank”, koda: HABALV22<br>
+            Konts: LV30HABA0551027122520<br>
+            Pamatojums: ziedojums</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="m-0 hide-on-mobile">
+            <span clss="">&copy; wayout.is</span>
+            <a href="#">Privātuma politika</a> |
+            <a href="#">Palīdzība</a> |
+            <a href="#">Noteikumi</a>
+          </p>
+          <p class="m-0 show-on-mobile privaty">
+            <a href="#">Privātuma politika</a>
+            <a href="#">Palīdzība</a>
+            <a href="#">Noteikumi</a>
+            <span class="copy-right">&copy; wayout.is</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    // Отключаем автоматическое переключение
+    $('#testimonialCarousel').carousel({
+        interval: false,
+        wrap: true
+    });
+</script>
+</body>
+</html>
