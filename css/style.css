@@ -870,8 +870,29 @@ body {
   color: #ADADAD;
   content: "-";
 }
+.breadcrumb-item a{
+  color: #161C29;
+  text-decoration: none;
+}
+.breadcrumb-item a.disabled{
+  pointer-events: none;
+  color: #ADADAD;
+}
 .course-option{
+  padding-left: 1.8rem;
   margin-bottom: 0.8rem;
+}
+.form-check-input[type="radio"]{
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border: 2px solid white;
+  box-shadow: 0px 0px 0px 2px #161C29;
+  border-radius: 50%;
+  margin-left: -1.5rem;
+}
+.form-check-input:checked{
+  background-color: #161C29;
 }
 .course-option .form-check-label{
   font-weight: 600;
@@ -879,7 +900,6 @@ body {
 .course-option .course-description{
   display: none;
 }
-
 .course-title{
   font-weight: 700;
 }
@@ -891,6 +911,14 @@ body {
   background-color: #E4E4E4;
   box-shadow: 0vw 0vw 0vw 200vw #E4E4E4;
   clip-path: polygon(0% 0%,100vw 0%,100vw 100%,0% 100%);
+}
+
+/*  */
+.form-group{
+  margin-bottom: 0.7rem;
+}
+.underline{
+  text-decoration: underline;
 }
 @media(max-width:991.98px){
   .course-option .form-check-input:checked ~ .course-description{
